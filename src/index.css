@@ -139,7 +139,7 @@ button{
 .specials-body{
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 50px;
   border-radius: 15px 15px 0 0;
 }
@@ -402,6 +402,17 @@ footer ul{
 }
 
 @media (min-width: 1920px){
+  nav, .specials, .testimonials, footer, .about, .hero{
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .specials-body{
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 2200px){
   nav, .specials, .testimonials, footer, .about, .hero{
     padding-left: 30%;
     padding-right: 30%;
