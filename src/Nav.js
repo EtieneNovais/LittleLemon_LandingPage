@@ -1,4 +1,5 @@
 import logo from './images/logo1.png';
+import {Link} from 'react-router-dom';
 
 function Nav(){
     return (
@@ -7,10 +8,10 @@ function Nav(){
                 <img src={logo} alt="Logo" className='logo'/>
             </div>
             <ul>
-                <li>Home</li>
+                <li><Link to='/'>Home</Link></li>
                 <li>About</li>
                 <li>Menu</li>
-                <li>Reservations</li>
+                <li><Link to='/booking'>Reservations</Link></li>
                 <li>Order Online</li>
                 <li>Login</li>
             </ul>

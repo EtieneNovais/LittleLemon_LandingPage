@@ -23,6 +23,15 @@ code {
   grid-auto-flow: row;
 }
 
+a{
+  text-decoration: none;
+  color: #333333;
+}
+
+a:visited{
+  color: #333333;
+}
+
 nav, .specials, .testimonials, footer, .about, .hero{
   padding: 20px 18%;
 }
@@ -33,6 +42,7 @@ nav{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  color: #333333;
 }
 
 .logo{
@@ -388,5 +398,16 @@ footer ul{
   }
   footer{
     flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 1920px){
+  nav, .specials, .testimonials, footer, .about, .hero{
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .specials-body{
+    justify-content: space-between;
   }
 }
