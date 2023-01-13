@@ -7,6 +7,7 @@ import barney from './images/barney.webp';
 import lily from './images/lily.jpg';
 import chef1 from './images/chef1.jpg';
 import chef2 from './images/chef2.webp';
+import {Link} from 'react-router-dom';
 
 function Main(){
     return (
@@ -19,7 +20,9 @@ function Main(){
                         consectetur adipiscing elit. Sed <br/>
                         tincidunt mi sed purus ullamcorper.
                     </p>
-                    <button>Reserve a table</button>
+                    <Link to='/booking'>
+                        <button>Reserve a table</button>
+                    </Link>
                 </div>
                 <div className='hero-right'>
                     <img src={hero} alt="Hero"/>
