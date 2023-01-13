@@ -463,8 +463,23 @@ form label{
   text-align: center;
 }
 
+form .message{
+  font-family: 'Karla';
+  font-size: 14px;
+  font-weight: 300;
+  color: red;
+  margin-top: -15px;
+}
+
 input[type='submit']{
   margin-top: 40px;
+  cursor: pointer;
+}
+
+input[type='submit']:disabled{
+  cursor: default;
+  background-color: #EDEFEE;
+  border: 1px solid #F4CE14;
 }
 
 /*=============== Confirmed Booking ===================*/
